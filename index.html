@@ -57,14 +57,14 @@
       </section>
 
       <!-- Add padding to the top and bottom of the section -->
-      <section id="intro">
+      <section id="intro" class="py-5">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Section heading</h2>
+          <h2 class="mb-4">Section heading</h2>
           <!-- Using the grid system, adjust the following so that the text is 100% until the large breakpoint when it will then span 10 columns -->
-          <div>
-            <div>
+          <div class="row">
+            <div class="col-lg-10">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
             </div>
           </div>
@@ -73,14 +73,14 @@
 
       <!-- Add padding to the top and bottom of the section -->
       <!-- Set section background color to use the dark theme with light text -->
-      <section id="two-column-section">
+      <section class="py-5 bg-dark text-light" id="two-column-section">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Section heading</h2>
+          <h2 class="mb-4">Section heading</h2>
           <!-- Using the grid system, adjust the following so that the text in both divs are 100% until the small breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands -->
-          <div>
-            <div>
+          <div class="row row-cols-sm-2">
+            <div class="col">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
             </div>
             <div>
@@ -91,17 +91,25 @@
       </section>
 
       <!-- Add padding to the top and bottom of the section -->
-      <section id="cards">
+      <section class="py-5" id="cards">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Section heading</h2>
+          <h2 class="mb-4">Section heading</h2>
 
           <!-- Using the grid system, adjust the following so that the cards are 100% until the small breakpoint where it then divides to use 6 columns each, then again at the large breakpoint each card will span 3 columns each -->
           <!-- Add a gutter y using the value 4 -->
-          <div>
-            <div>
+          <div class="row row-cols-sm-2 row-cols-lg-4 gy-4">
+            <div class="col">
               <!-- Use the card component and set to use the dark bg with light text -->
+              <div class="card bg-dark text-white">
+                <img src="images/abstract.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-light">Go somewhere</a>
+                </div>
+              </div>
               <!-- Update snippet to include the image being used in the screenshot -->
               <!-- Update button to use light button theme -->
 
@@ -109,14 +117,38 @@
 
             <div>
               <!-- Card goes here -->
+              <div class="card bg-dark text-white">
+                <img src="images/abstract.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-light">Go somewhere</a>
+                </div>
+              </div>
             </div>
 
             <div>
               <!-- Card goes here -->
+              <div class="card bg-dark text-white">
+                <img src="images/abstract.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-light">Go somewhere</a>
+                </div>
+              </div>
             </div>
 
             <div>
               <!-- Card goes here -->
+              <div class="card bg-dark text-white">
+                <img src="images/abstract.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-light">Go somewhere</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -124,16 +156,16 @@
 
       <!-- Add padding to the top and bottom of the section -->
       <!-- Set section background color to use the dark theme with light text -->
-      <section>
+      <section class="py-5 bg-dark text-light">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Some heading</h2>
+          <h2 class="mb-4">Some heading</h2>
           <!-- Using the grid system, adjust the first image and text are 100% until the large breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands. -->
-          <div>
-            <div>
+          <div class="row row-cols-lg-2 align-items-center">
+            <div class="col">
               <!-- Adjust the img with a class to make it responsive (fluid) -->
-              <img src="images/abstract.jpg" alt="">
+              <img class="container-fluid" src="images/abstract.jpg" alt="">
             </div>
             <div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
@@ -141,10 +173,10 @@
           </div>
           <!-- Using the grid system, adjust the second image and text are 100% until the large breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands. -->
           <!-- For the two pieces of content here, swap the order using a flex utility class  -->
-          <div>
-            <div>
+          <div class="row row-cols-lg-2 d-flex flex-row-reverse align-items-center">
+            <div class="col">
               <!-- Adjust the img with a class to make it responsive (fluid) -->
-              <img src="images/abstract.jpg" alt="">
+              <img class="container-fluid" src="images/abstract.jpg" alt="">
             </div>
             <div>
               <div>
@@ -156,11 +188,11 @@
       </section>  
       
       <!-- Add padding to the top and bottom of the section -->
-      <section>
+      <section class="py-5">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Pick any Bootstrap component and explore</h2>
+          <h2 class="mb-4">Pick any Bootstrap component and explore</h2>
           <p>Within the available space, choose any component from Bootstrap and showcase it here. It can be as simple or complicated as you like but must stay within the div below.</p>
           <div>
             <!-- Place component here.  -->
@@ -170,7 +202,7 @@
     </main>
 
     <!-- Set background color to use the dark theme with light text -->
-    <footer>
+    <footer class="bg-dark text-light">
       <!-- Use a container class that will set a max-width at each breakpoint -->
       <!-- Center align text -->
       <!-- Add padding to the top and bottom using value 3 -->
